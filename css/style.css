@@ -79,6 +79,13 @@ main {
     width: 100%;
     height: 50px;
     border-radius: 50px;
+    overflow: hidden;
+    text-indent: 30px;
+    border: solid 1px var(--desaturated-red);
+}
+
+.bottom input:focus {
+    outline: none;
 }
 
 .bottom ::placeholder {
@@ -95,6 +102,25 @@ main {
     border-radius: 50px;
     border: none;
     right: 0;
+}
+
+.bottom button:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background: linear-gradient(135deg,rgb(250, 214, 214),rgb(247, 203, 204));
+    box-shadow: 0 0 5px var(--desaturated-red);
+}
+
+#error {
+    position: absolute;
+    top: 14px;
+    right: 95px;
+    visibility: hidden;
+}
+
+#error-message {
+    color: var(--soft-red);
+    margin: 10px 0 0 30px;
 }
 
 .attribution {
