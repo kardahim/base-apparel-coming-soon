@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
 }
 
 main {
@@ -36,7 +37,6 @@ main {
     background-image: url("/images/bg-pattern-desktop.svg");
     background-size: cover;
     background-position:bottom;
-    /* background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%)); */
 }
 
 .image {
@@ -130,4 +130,126 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.mobile-image {
+    background: url("/images/hero-mobile.jpg") no-repeat;
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .content {
+        padding: 80px 20% 0px 200px;
+    }
+    
+    .middle h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        padding: 80px 15% 0px 200px;
+    }
+    
+    .middle h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        padding: 80px 10% 0px 150px;
+    }
+    
+    .middle h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        padding: 80px 10% 0px 100px;
+    }
+    
+    .middle h1 {
+        font-size: 40px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .image {
+        display:none;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mobile-image {
+        display: block;
+    }
+
+    .top {
+        padding: 30px;
+    }
+
+    .middle {
+        margin-top: 50px;
+        padding: 0 100px;
+    }
+
+    .middle h1 {
+        font-size: 60px;
+    }
+
+    .middle p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .middle h1:nth-child(1), .middle h1:nth-child(3)  {
+        text-indent: 50px;
+    }
+
+    .bottom {
+        padding: 0 100px 80px;
+    }
+
+    .bottom button {
+        right: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mobile-image {
+        height: 350px;
+    }
+
+    .middle {
+        padding: 0 50px;
+    }
+
+    .bottom {
+        padding: 0 50px 50px;
+    }
+
+    .bottom button {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .middle h1 {
+        font-size: 50px;
+    }
+
+    .middle p {
+        font-size: var(--fs);
+    }
 }
