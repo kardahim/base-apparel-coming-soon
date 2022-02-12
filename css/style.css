@@ -123,13 +123,18 @@ main {
     margin: 10px 0 0 30px;
 }
 
+footer {
+    position: absolute;
+    top: 90vh;
+    left: 200px;
+}
+
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  font-size: 20px;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--soft-red);
 }
 
 .mobile-image {
@@ -158,6 +163,14 @@ main {
     .middle h1 {
         font-size: 60px;
     }
+
+    .attribution {
+        font-size: var(--fs);
+    }
+
+    footer {
+        top: 80vh;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -168,6 +181,10 @@ main {
     .middle h1 {
         font-size: 50px;
     }
+
+    footer {
+        left: 150px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -177,6 +194,10 @@ main {
     
     .middle h1 {
         font-size: 40px;
+    }
+
+    footer {
+        left: 100px;
     }
 }
 
@@ -224,6 +245,11 @@ main {
     .bottom button {
         right: 100px;
     }
+
+    footer {
+        left: 100px;
+        top: 125vh;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -241,6 +267,11 @@ main {
 
     .bottom button {
         right: 50px;
+    }
+
+    footer {
+        left: 50px;
+        top: 115vh;
     }
 }
 
